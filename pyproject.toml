@@ -1,0 +1,12 @@
+[project]
+name = "jdhedge"
+version = "1.0.0"
+description = "Pricing and hedging of short-dated options under a Bachelier jump-diffusion"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
